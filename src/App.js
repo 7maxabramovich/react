@@ -1,10 +1,12 @@
 import './App.css';
-import Moment from 'react-moment';
+import Route1 from './Route1';
 import React, { useState } from 'react';
+import Moment from 'react-moment';
+
 
 function App(props) {
 
-  let [date, setDate] = useState(new Date());
+  let [, setDate] = useState(new Date());
 
   setInterval(() => {
       setDate(new Date(), 250);
@@ -13,7 +15,8 @@ function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <button className="custom-btn"><Moment format="DD/MM/YYYY hh:mm:ss">{ props.date }</Moment></button>
+        <button className="custom-btn"><Moment format="hh:mm:ss">{ props.date }</Moment></button>
+        <Route1 />
       </header>
     </div>
   );
