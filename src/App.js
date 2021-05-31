@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Route1 from './Route1';
 import React, { useState } from 'react';
 import Moment from 'react-moment';
